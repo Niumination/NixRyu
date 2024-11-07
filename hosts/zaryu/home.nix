@@ -52,7 +52,7 @@
       timeshift
       ranger
       ncdu
-      mousepad-wrapper
+      xfce.mousepad
 
       # Dev
       go
