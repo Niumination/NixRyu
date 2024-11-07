@@ -11,7 +11,7 @@
     ../../home/programs/fetch
     ../../home/programs/git
     ../../home/programs/spicetify
-    ../../home/programs/nextcloud
+    #../../home/programs/nextcloud
     # ../../home/programs/yazi # FIXME: Fail to build on unstable
     ../../home/programs/markdown
     ../../home/programs/thunar
@@ -46,9 +46,13 @@
     packages = with pkgs; [
       # Apps
       discord # Chat
-      bitwarden # Password manager
+      #bitwarden # Password manager
       vlc # Video player
       blanket # White-noise app
+      timeshift
+      ranger
+      ncdu
+      mousepad
 
       # Dev
       go
@@ -69,7 +73,7 @@
       # Just cool
       peaclock
       cbonsai
-      pipes
+      #pipes
       cmatrix
       cava
 

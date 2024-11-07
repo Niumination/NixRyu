@@ -3,8 +3,8 @@
     bind = [
       "$mod,RETURN, exec, ${pkgs.kitty}/bin/kitty" # Kitty
       "$mod,E, exec, ${pkgs.xfce.thunar}/bin/thunar" # Thunar
-      "$mod,B, exec, ${pkgs.qutebrowser}/bin/qutebrowser" # Qutebrowser
-      "$mod,K, exec, ${pkgs.bitwarden}/bin/bitwarden" # Bitwarden
+      "$mod,B, exec, ${pkgs.firefox}/bin/firefox" # firefox
+      "$CTRL,ALT,DELETE, exec, ${pkgs.btop}/bin/btop"
       "$mod,L, exec, ${pkgs.hyprlock}/bin/hyprlock" # Lock
       "$mod,X, exec, powermenu" # Powermenu
       "$mod,SPACE, exec, menu" # Launcher
@@ -13,8 +13,8 @@
       "$mod,TAB, overview:toggle" # Overview
 
       "$mod,Q, killactive," # Close window
-      "$mod,T, togglefloating," # Toggle Floating
-      "$mod,F, fullscreen" # Toggle Fullscreen
+      "$mod,W, togglefloating," # Toggle Floating
+      "$ALT,RETURN, fullscreen" # Toggle Fullscreen
       "$mod,left, movefocus, l" # Move focus left
       "$mod,right, movefocus, r" # Move focus Right
       "$mod,up, movefocus, u" # Move focus Up
@@ -34,6 +34,11 @@
       "$shiftMod,E, exec, ${pkgs.wofi-emoji}/bin/wofi-emoji" # Emoji picker with wofi
       "$mod,F2, exec, night-shift" # Toggle night shift
       "$mod,F3, exec, night-shift" # Toggle night shift
+
+      "$mod,TAB, workspace, m+1" # switchtab
+      "$mod,V, exec, ${pkgs.code}/bin/code"
+
+
     ] ++ (builtins.concatLists (builtins.genList (i:
       let ws = i + 1;
       in [
@@ -43,7 +48,7 @@
 
     bindm = [
       "$mod,mouse:272, movewindow" # Move Window (mouse)
-      "$mod,R, resizewindow" # Resize Window (mouse)
+      "$mod,mouse:273, resizewindow" # Resize Window (mouse)
     ];
 
     bindl = [
