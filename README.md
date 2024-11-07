@@ -5,7 +5,7 @@
 
 <br>
 
-# Nixy
+# NixRyu - It is Fork by Anotherhadi/nixy.git
 
 <br>
 <div align="center">
