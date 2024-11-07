@@ -52,7 +52,7 @@
       timeshift
       ranger
       ncdu
-      mousepad
+      mousepad-wrapper
 
       # Dev
       go
