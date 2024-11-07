@@ -36,7 +36,7 @@
       "$mod,F3, exec, night-shift" # Toggle night shift
 
       "$mod,TAB, workspace, m+1" # switchtab
-      "$mod,V, exec, ${pkgs.code}/bin/code"
+      "$mod,V, exec, code"
 
 
     ] ++ (builtins.concatLists (builtins.genList (i:
